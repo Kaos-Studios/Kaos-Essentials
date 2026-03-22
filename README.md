@@ -1,5 +1,5 @@
 
-<img width="300" height="300" alt="mcpfp - S2Radu" src="https://github.com/user-attachments/assets/18845bcb-6546-47fc-bd77-924a72888af7" />
+<img width="512" height="512" alt="minecraft_title" src="https://github.com/user-attachments/assets/05bf63d1-f66d-4fbc-823b-27c14a25886f" />
 
 # KaosEssentials
 
