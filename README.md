@@ -1,3 +1,6 @@
+
+<img width="300" height="300" alt="mcpfp - S2Radu" src="https://github.com/user-attachments/assets/18845bcb-6546-47fc-bd77-924a72888af7" />
+
 # KaosEssentials
 
 > Modular essentials plugin for Minecraft servers — economy, teleportation, chat, homes, warps, administration and utilities in a single, clean and well-structured plugin.
