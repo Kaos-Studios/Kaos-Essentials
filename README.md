@@ -4,25 +4,24 @@
 # KaidonEssentials
 </div>
 
-> Modular essentials plugin for Minecraft servers — economy, teleportation, chat, homes, warps, administration and utilities in a single, clean and well-structured plugin.
+> Modular essentials plugin for Minecraft servers — economy, teleportation, chat, homes, warps, administration, and utilities in a single, clean, and well-structured plugin.
 
 ---
 
 ## Overview
 
-KaidonEssentials is an essentials plugin built with a focus on clean code, organization and performance. It covers the core needs of any server through dedicated, independent systems — all integrated with Vault and PlaceholderAPI out of the box.
+KaidonEssentials is an essentials plugin built with a focus on clean code, organization, and performance. It covers the core needs of any server through dedicated, independent systems — all integrated with Vault and PlaceholderAPI support.
 
 ---
 
 ## Compatibility
 
-
 | Platform   | Supported              |
 |------------|------------------------|
 | Spigot     | 1.19.4+                |
 | Paper      | 1.19.4, 1.20.4, 1.21.1 |
-| Purpur     | 1.21.1                 |
-| Pufferfish | 1.19.4+                |
+| Purpur     | 1.19.4+ (Paper-based)  |
+| Pufferfish | 1.19.4+ (Paper-based)  |
 | Folia      | 1.19.4+                |
 
 > Minimum API version: **1.19**
@@ -31,14 +30,14 @@ KaidonEssentials is an essentials plugin built with a focus on clean code, organ
 
 ## Requirements
 
-- [Vault](https://www.spigotmc.org/resources/vault.34315/) *(Dependencies — required for economy features)*
-- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) *(Dependencies — required for placeholders)*
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) *(Recommended/required for economy features)*
+- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) *(Optional — required only for placeholders in other plugins)*
 
 ---
 
 ## Installation
 
-1. Download the latest `.jar` from [Releases](https://github.com)
+1. Download the latest `.jar` from your release page
 2. Place the file in your server's `/plugins` folder
 3. Restart the server
 4. Configure the plugin in `plugins/KaidonEssentials/config.yml`
@@ -50,10 +49,9 @@ KaidonEssentials is an essentials plugin built with a focus on clean code, organ
 ### Economy
 Vault-integrated currency management.
 
-
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
-| `/money` | `/money [player]` | `kaidon.command.money` | Everyone |
+| `/money` | `/money [player]` | `kaidon.command.money` | OP |
 | `/pay` | `/pay <player> <amount>` | `kaidon.command.pay` | Everyone |
 | `/setarmoney` | `/setarmoney <player> <amount>` | `kaidon.admin.money.set` | OP |
 | `/removermoney` | `/removermoney <player> <amount\|all>` | `kaidon.admin.money.remove` | OP |
@@ -62,7 +60,6 @@ Vault-integrated currency management.
 
 ### Warps
 Interactive GUI for public teleport points.
-
 
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
@@ -74,7 +71,6 @@ Interactive GUI for public teleport points.
 ### Homes
 Per-player personal teleport points.
 
-
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
 | `/sethome` | `/sethome <name>` | `kaidonessentials.sethome` | Everyone |
@@ -85,7 +81,6 @@ Per-player personal teleport points.
 
 ### Teleport
 TPA system with accept/deny and server spawn.
-
 
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
@@ -100,11 +95,10 @@ TPA system with accept/deny and server spawn.
 ### Chat
 Local and global chat with moderation tools.
 
-
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
-| `/g` | `/g <message>` *(alias: /global)* | — | Everyone |
-| `/mute` | `/mute <player>` | `kaidon.command.mute` | OP |
+| `/g` | `/g <message>` *(alias: `/global`)* | — | Everyone |
+| `/mute` | `/mute <player> <time>` *(ex: `10s`, `5m`, `1h`, `7d`, `1y`)* | `kaidon.command.mute` | OP |
 | `/unmute` | `/unmute <player>` | `kaidon.command.unmute` | OP |
 | `/clearchat` | `/clearchat` | `kaidonessentials.clearchat` | OP |
 | `/aviso` | `/aviso <message>` | `kaidon.command.aviso` | OP |
@@ -119,14 +113,13 @@ Local and global chat with moderation tools.
 ### Administration
 Moderation and inspection tools.
 
-
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
 | `/freeze` | `/freeze <player>` | `kaidon.command.freeze` | OP |
 | `/invsee` | `/invsee <player>` | `kaidon.command.invsee` | OP |
 | `/speed` | `/speed <1-10>` | `kaidon.command.speed` | OP |
 | `/speedreset` | `/speedreset` | `kaidon.command.speedreset` | OP |
-| `/kireload` | `/kireload` | `kaidon.admin.reload` | OP |
+| `/kreload` | `/kreload` | `kaidon.admin.reload` | OP |
 
 > `kaidon.admin.commandbypass` — Bypass blocked commands defined in config (OP)
 
@@ -134,7 +127,6 @@ Moderation and inspection tools.
 
 ### Utilities
 Quality of life commands for players.
-
 
 | Command | Usage | Permission | Default |
 |---------|-------|------------|---------|
@@ -145,7 +137,6 @@ Quality of life commands for players.
 ---
 
 ## PlaceholderAPI
-
 
 | Placeholder | Description |
 |-------------|-------------|
@@ -166,7 +157,7 @@ See the [LICENSE](LICENSE) file for detailed terms of use and restrictions.
 - [Website](https://kaidonstudios.dev)
 - [Discord](https://discord.gg/tVes26GfBk)
 - [Modrinth](https://modrinth.com/plugin/kaidon-essentials)
-- [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/kaos-essentials)
+- [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/kaidon-essentials)
 
 ---
 
