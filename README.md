@@ -30,8 +30,8 @@ KaidonEssentials is an essentials plugin built with a focus on clean code, organ
 
 ## Requirements
 
-- [Vault](https://www.spigotmc.org/resources/vault.34315/) *(Recommended/required for economy features)*
-- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) *(Optional — required only for placeholders in other plugins)*
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) **(Required)**
+- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) **(Optional, required only for `%kaidon_*%` placeholders)**
 
 ---
 
